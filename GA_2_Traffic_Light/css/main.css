@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	max-width: 600px;
+	font-family: avenir, helvetica, sans-serif;
+	color: rgb(255,255,255);
+	background: rgb(85,145,185);
+	margin: 20px;
+}
+
+button {
+	width: 120px;
+	height: 60px;
+	margin: 10px 0 2px 0;
+	border-radius: 6px;
+	border-bottom: 4px solid rgb(56,195,196);
+	background: rgb(255,255,255);
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+#light-container {
+	position: absolute;
+	width: 80px;
+	height: 220px;
+	background: rgb(255,255,255);
+	border: 1px solid rgb(204,204,204);
+	border-radius: 4px;
+}
+
+#button-container {
+	float: left;
+	position: relative;
+	margin-left: 120px;
+	width: 80px;
+	height: 220px;
+}
+
+.light {
+	width: 60px;
+	height: 60px;
+	background: rgba(0,0,0,1);
+	border-radius: 30px;
+	border: 2px solid #ccc;
+	margin: 10px;
+	padding: 0;
+	transition: background-color 1s ease 0s;
+}
+
+#car {
+	position: relative;
+	top: 300px;	
+	width: 150px;
+	height: 70px;
+	background-color: rgb(188,94,72);
+	-webkit-animation-name: carMove;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes carMove {
+	0% {left: 0px; right: 100px;}
+	25% {left: 100px; right: 200px;}
+	50% {left: 200px; right: 300px;}
+	75% {left: 300px; right: 400px;}
+	100% {left: 400px; right: 500px;}
+}
+
+

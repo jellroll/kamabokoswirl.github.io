@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Traffic Light</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body onload="directions()">
+	<p id="directions"></p>
+
+	<div id="light-container">
+		<div id="light-stop" class="light"></div>
+		<div id="light-caution" class="light"></div>
+		<div id="light-go" class="light"></div>
+	</div>
+
+	<div id="button-container">
+		<button id="button-stop" onclick="lightStop()">Stop</button>
+		<button id="button-caution" onclick="lightCaution()">Caution</button>
+		<button id="button-go" onClick="lightGo()">Go</button>
+	</div>
+
+	<div id="car"></div>
+
+</body>
+
+</html>
