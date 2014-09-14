@@ -52,17 +52,44 @@ button {
 }
 
 #car {
+	display: inline-block;
 	position: relative;
 	top: 300px;	
-	width: 150px;
+	width: 100px;
 	height: 70px;
 	background-color: rgb(188,94,72);
+	border-radius: 0 60px 0 0;
+	animation-name: carMove;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
 	-webkit-animation-name: carMove;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-delay: 0s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-play-state: running;
+	-webkit-animation-play-state: paused;
+	/* Skew */
+	transition-duration: 0.2s;
+	transition-property: transform;
+	transform-origin: 0 100%;
+	transform: translateZ(0);
+	transform: skew(0deg);
+	-webkit-transition-duration: 0.2s;
+ 	-webkit-transition-property: transform;
+  	-webkit-transform-origin: 0 100%;
+  	-webkit-transform: translateZ(0);
+  	-webkit-transform: skew(0deg);
+}
+
+@keyframes carMove {
+	0% {left: 0px; right: 100px;}
+	25% {left: 100px; right: 200px;}
+	50% {left: 200px; right: 300px;}
+	75% {left: 300px; right: 400px;}
+	100% {left: 400px; right: 500px;}
 }
 
 @-webkit-keyframes carMove {
@@ -73,4 +100,16 @@ button {
 	100% {left: 400px; right: 500px;}
 }
 
+.wheel {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	display: inline-block;
+	background: rgb(251,244,47);
+	border: 2px solid rgb(255,255,255);
+	margin-top: 60px;
+}
 
+#wheel-front {
+	float: right;
+}
