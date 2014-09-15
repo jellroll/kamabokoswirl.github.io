@@ -95,19 +95,21 @@ button {
 }
 
 @keyframes carMove {
-	0% {left: 0px; right: 100px;}
-	25% {left: 100px; right: 200px;}
-	50% {left: 200px; right: 300px;}
-	75% {left: 300px; right: 400px;}
-	100% {left: 400px; right: 600px;}
+	from {
+		left: 0;
+	}
+	to {
+		left: 100%;
+	}
 }
 
 @-webkit-keyframes carMove {
-	0% {left: 0px; right: 100px;}
-	25% {left: 100px; right: 200px;}
-	50% {left: 200px; right: 300px;}
-	75% {left: 300px; right: 400px;}
-	100% {left: 400px; right: 600px;}
+	from {
+		left: 0;
+	}
+	to {
+		left: 100%;
+	}
 }
 
 .wheel {
