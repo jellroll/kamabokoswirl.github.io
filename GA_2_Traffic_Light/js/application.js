@@ -1,3 +1,5 @@
+var car = document.getElementById('car');
+
 function directions() {
 	document.getElementById('directions').innerHTML = 'Click a button to control the traffic light and car.';
 }
@@ -44,13 +46,15 @@ function lightGo() {
 	document.getElementById('car').style.WebkitAnimationPlayState = 'running';
 }
 
-function lightsOff() {
+function lightsOff() { 
 	document.getElementById('light-stop').style.background = 'rgb(0,0,0)';
 	document.getElementById('light-caution').style.background = 'rgb(0,0,0)';
 	document.getElementById('light-go').style.background = 'rgb(0,0,0)';
 }
 
 function buttonsOn() {
+	//use an array on class button????
+	//var buttons = document.getElementsByClass('buttons')
 	document.getElementById('button-stop').disabled = false;
 	document.getElementById('button-caution').disabled = false;
 	document.getElementById('button-go').disabled = false;
