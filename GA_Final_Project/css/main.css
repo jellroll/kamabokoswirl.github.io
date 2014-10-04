@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	background: rgb(102,163,198);
+	font-family: "Avenir", helvetica, sans-serif;
+}
+
+h1 {
+	font-family: "Bitter", serif;
+	color: rgb(255,255,255);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: rgb(255,255,255);
+}
+
+footer a {
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+#card-container {
+	margin: 0 auto;
+	border: 1px solid rgb(204,204,204);
+	border-radius: 8px;
+	max-width: 450px;
+	min-height: 320px;
+	background: rgb(255,255,255);
+}
+
+#card-content {
+	margin-top: 20px;
+	font-size: 28px;
+	line-height: 40px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+#controls {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 225px;
+	display: block;
+	bottom: -100px;
+}
+
+#controls .icon-heart {
+	margin-left: 100px;
+}
+
+.highlight {
+	background: rgb(235,219,85);
+}
