@@ -13,17 +13,23 @@ h1 {
 	font-family: 'Wire One', helvetica, sans-serif;
 }
 
+#main-container {
+	max-width: 700px;
+	height: 550px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #image-container {
-	display: inline-block;
+	display: block;
 	}
 
 #main-image {
 	max-width: 100%;
-	display: block;
 }
 
 #main-caption {
-	margin-top: 10px;
 	display: inline-block;
 }
 
@@ -34,8 +40,9 @@ h1 {
 }
 
 #thumb-container {
-	position: absolute;
-	margin-top: 20px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .thumb {
@@ -55,7 +62,7 @@ h1 {
 	padding: 4px;
 	margin-left: 4px;
 	color: rgb(255,255,255);
-	pointer: cursor;
+	cursor: pointer;
 }
 
 .btn:hover {
