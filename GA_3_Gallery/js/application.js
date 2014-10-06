@@ -1,6 +1,6 @@
 images = ["img/image-01.jpg", "img/image-02.jpg", "img/image-03.jpg", "img/image-04.jpg", "img/image-05.jpg",  "img/image-06.jpg", "img/image-07.jpg", "img/image-08.jpg", "img/image-09.jpg", "img/image-10.jpg", "img/image-11.jpg", "img/image-12.jpg"];
 
-captions = ["Wood Chips", "Mushroom", "Mushroom Friends", "Haleakala Rock", "Mossy", "Leaves", "Paper-like Bark", "Tree Bark", "Rainbow Eucalyptus", "More Trees", "Hanging Berries", "Wood On Black Sand Beach"];
+captions = ["Haleakala", "Mushroom", "Mushroom Friends", "Haleakala Rock", "Mossy", "Leaves", "Paper-like Bark", "Tree Bark", "Rainbow Eucalyptus", "More Trees", "Hanging Berries", "Wood On Black Sand Beach"];
 
 // Change image and caption
 var currentImage = 0;
