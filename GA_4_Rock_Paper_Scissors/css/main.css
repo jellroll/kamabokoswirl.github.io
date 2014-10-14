@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	font-family: Avenir, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	margin: 0 10px 0 50px;
+	float: right;
+	border-radius: 4px;
+	border-bottom: 2px solid rgb(184,231,251);
+	background: rgb(63,198,85);
+	color: rgb(255,255,255);
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+#player1-container {
+	width: 50%;
+	float: left;
+	background-color: rgb(85,145,185);
+}
+
+#player2-container{
+	width: 50%;
+	float: right;
+	background-color: rgb(162,191,185);
+	text-align: right;
+}
+
+#option-container {
+	width: 100%;
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	padding: 10px;
+	background: rgba(0,0,0,.6);
+	border-radius: 2px;	
+}
+
+#option-container img {
+	max-height: 50px;
+}
+
+#game-logo {
+	min-width: 10%;
+	display: inline-block;
+}
+
+#winner {
+	float: right;
+	color: rgb(255,255,255);
+	font-size: 2.2em;
+}
+
+#option-flash {
+	margin-left: 8px;
+}
+
+.player-container {
+	height: 100vh;
+}
+
+.player-info {
+	height: 48px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 1.2em;
+	line-height: 48px;
+	margin: 10px 10px 30px 10px;
+}
+
+.player1-avatar {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.player2-avatar {
+	float: right;
+	margin-left: 0.5em;
+}
+
+.player-name {
+	color: rgb(0,0,0);
+}
+
+.player-choice {
+	display: inline;
+	margin: 30px 25% 30px 25%;
+}
+
+.hero-image {
+	max-width: 50%;
+}
+
+.score {
+	color: rgb(255,255,255);
+	margin-left: 10px;
+}
+
+.option {
+	display: inline;
+	cursor: pointer;
+}
+
+.clearfix {
+	clear: both;
+}
