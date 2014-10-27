@@ -54,7 +54,6 @@ ol {
 footer {
 	width: 100%;
 	position: fixed;
-	margin-top: 10px;
 	bottom: 4px;
 	text-align: center;
 	color: rgb(255,255,255);
@@ -202,6 +201,12 @@ footer a:hover {
 
 .review-issue {
 	font-weight: bold;
+}
+
+@media (max-width: 320px) {
+	footer {
+		display: none;
+	}
 }
 
 
