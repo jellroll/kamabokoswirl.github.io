@@ -17,8 +17,8 @@ var item1 = {
 	"answer" : false,
 	"fix" : false,
 	"correct" : "Ironic",
-	"feedbackCorrectMessage" : "Yes. Something is <span class=\"highlight\">ironic</span> when it's <b>opposite</b> to what you would expect.",
-	"feedbackIncorrectMessage" : "Something is <em>ironic</em> when it's <b>opposite</b> to what you would expect (not just unfortunate).",
+	"feedbackCorrectMessage" : "Yes. Something is <span class=\"highlight\">ironic</span> when it's the <b>reverse</b> of what you would expect.",
+	"feedbackIncorrectMessage" : "Something is <em>ironic</em> when it's the <b>reverse</b> of what you would expect. It's not just unfortunate.",
 	"feedbackImage" : "img/hint-iron.png",
 	"issue" : "<span class=\"review-issue\">Ironic</span><br /><a href=\"http://theoatmeal.com/comics/irony\" target=\"_blank\">The Oatmeal: The Three Most Common Uses of Irony</a>"
 }
