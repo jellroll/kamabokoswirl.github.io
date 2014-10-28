@@ -18,7 +18,7 @@ var item1 = {
 	"fix" : false,
 	"correct" : "Ironic",
 	"feedbackCorrectMessage" : "Yes. Something is <span class=\"highlight\">ironic</span> when it's <b>opposite</b> to what you would expect.",
-	"feedbackIncorrectMessage" : "<span class=\"highlight\">Ironic</span> doesn't just describe an unfortunate situtation. Something is <em>ironic</em> when it's <b>opposite</b> to what you would expect.",
+	"feedbackIncorrectMessage" : "Something is <em>ironic</em> when it's <b>opposite</b> to what you would expect (not just unfortunate).",
 	"feedbackImage" : "img/hint-iron.png",
 	"issue" : "<span class=\"review-issue\">Ironic</span><br /><a href=\"http://theoatmeal.com/comics/irony\" target=\"_blank\">The Oatmeal: The Three Most Common Uses of Irony</a>"
 }
@@ -40,7 +40,7 @@ var item3 = {
 	"correct" : "lose",
 	"feedbackCorrectMessage" : "Good eye. <span class=\"highlight\">Irregardless</span> is not a real word.",
 	"feedbackIncorrectMessage" : "<span class=\"highlight\">Irregardless</span> is not a real word. Use the word <em>regardless</em> instead.",
-	"feedbackImage" : "img/hint-rabbit.png",
+	"feedbackImage" : "img/hint-not-real.png",
 	"issue" : "<span class=\"review-issue\">Irregardless</span><br /><a href=\"http://www.quickanddirtytips.com/education/grammar/irregardless-versus-regardless/\" target=\"_blank\">Grammar Girl: Irregardless Versus Regardless</a>"
 }
 
