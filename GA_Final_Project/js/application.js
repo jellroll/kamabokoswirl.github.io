@@ -53,6 +53,7 @@ function startGame() {
 // Display the item content
 function displayItem() {
 	$("#item").html(currentItem.stem);
+	displayProgress();
 }
 
 
@@ -85,6 +86,7 @@ function displayFeedbackCorrect() {
 	$("#feedback-evaluation").html(feedbackCorrect);
 	$("#feedback-message").html(currentItem.feedbackCorrectMessage);
 	$("#feedback-image").attr("src",currentItem.feedbackImage);
+	displayProgress();
 }
 
 
@@ -93,6 +95,7 @@ function displayFeedbackIncorrect() {
 	$("#feedback-evaluation").html(feedbackIncorrect);
 	$("#feedback-message").html(currentItem.feedbackIncorrectMessage);
 	$("#feedback-image").attr("src",currentItem.feedbackImage);
+	displayProgress();
 
 	// Push item issue into array
 	issues.push(currentItem.issue);
@@ -107,6 +110,7 @@ function evaluateResponse(response) {
 		$("#hint").html(currentItem.hint);
 		$("#card-item").hide();
 		$("#card-fix").show();
+		displayProgress();
 
 		// Invoke evaluateFixResponse with enter key on input
 		document.getElementById("user-fix-response").onkeydown = function(event) {
@@ -185,7 +189,17 @@ function displayIssues() {
 		}
 	}	
 }
-	
+
+
+// Display progress
+function displayProgress() {
+	var totalItems = items.length;
+	var currentProgress = (items.indexOf(currentItem) + 1);
+
+	$(".current-progress").html(currentProgress);
+	$(".total-items").html(totalItems);
+}
+
 
 // Reset the game
 function resetGame() {

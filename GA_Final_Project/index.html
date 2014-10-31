@@ -14,7 +14,7 @@
 	</head>
 
 <body>
-	<h1>utter butter</h1>
+	<h1>utter butter <span id="version">&#945;</span></h1>
 
 	<!-- Introduction -->
 	<div id="intro" class="card">
@@ -41,6 +41,8 @@
 			<span id="evaluate-response-false" class="icon-heart-broken wobble-top" aria-hidden="true" data-icon="&#e608;" alt="Mistake"></span>
 			<span id="evaluate-response-true" alt="No mistake" aria-hidden="true" data-icon="&#e600;" class="icon-heart pulse"></span>
 		</div>
+
+		<div id="progress"><span class="current-progress"></span>/<span class="total-items"></span></div>
 	</div>
 
 	<!-- Fix Item View -->
@@ -56,6 +58,8 @@
 		<div id="controls-feedback" class="controls">
 			<span id="evaluate-fix-response" class="icon-arrow-right wobble-horizontal" aria-hidden="true" data-icon="&#e605;" alt="Next"></span>
 		</div>
+
+		<div id="progress"><span class="current-progress"></span>/<span class="total-items"></span></div>
 	</div>
 
 	<!-- Feedback View -->
@@ -70,6 +74,8 @@
 		<div id="controls-feedback" class="controls">
 			<span id="display-next-item" class="icon-arrow-right wobble-horizontal" aria-hidden="true" data-icon="&#e605;" alt="Next"></span>
 		</div>
+		
+		<div id="progress"><span class="current-progress"></span>/<span class="total-items"></span></div>
 	</div>
 
 	<!-- Results View -->

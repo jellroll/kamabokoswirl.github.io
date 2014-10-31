@@ -5,7 +5,7 @@
 }
 
 body {
-	background: rgb(102,163,198);
+	background: rgb(50,154,201);
 	font-family: "Avenir", helvetica, sans-serif;
 }
 
@@ -73,6 +73,10 @@ footer a:hover {
 	border-radius: 2px;
 }
 
+#version {
+	opacity: 0.5;
+}
+
 #intro {
 	padding: 2px 14px 0 14px;
 	font-size: 1.1em;
@@ -133,6 +137,12 @@ footer a:hover {
 	text-align: center;
 	font-family: courier, serif;
 	font-size: .9em;
+}
+
+#progress {
+	font-size: .5em;
+	color: rgb(200,200,200);
+	text-align: right;
 }
 
 #results {

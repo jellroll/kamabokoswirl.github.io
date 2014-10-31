@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamaboko</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
-	<script src="js/main.js" type="text/javascript"></script>
-</head>
+<html>
+	<head>
+		<meta char="UTF-8">
+		<script src="js/jquery.js" rel="javascript" type="text/javascript"></script>
+		<script src="js/items.js" type="text/javascript" type="javascript/text"></script>
+		<script src="js/application.js" type="text/javascript" type="javascript/text"></script>
+		<link href="http://fonts.googleapis.com/css?family=Bitter:700" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="fonts/icomoon/style.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>utter butter game</title>
+	</head>
 
 <body>
-<div><a href="GA_2_Traffic_Light/index.html">Traffic Light</a></div></div>
+	<h1>utter butter</h1>
 
-<button onclick="tilt()">tilt the cone</button>
+	<!-- Introduction -->
+	<div id="intro" class="card">
+		<h3>How to play:</h3>
+		<ol>
+			<li>Read the sentence.</li>
+			<li>Is there a mistake?</li>
+			<li>Click or tap.
+			<br />
+			Mistake &#8674; <img src="img/intro-heart-broken.png" alt="Mistake" />
+			<br />
+			No mistake &#8674; <img src="img/intro-heart.png" alt="No mistake" /></li>
+		</ol>
+		<button id="start-game">start</button>
+	</div>
 
-<div id="cone"></div>
+	<!-- Item View -->
+	<div id="card-item" class="card">
+		<div class="card-content">
+			<p id="item"></p>
+		</div>
 
+		<div id="controls-item" class="controls">
+			<span id="evaluate-response-false" class="icon-heart-broken wobble-top" aria-hidden="true" data-icon="&#e608;" alt="Mistake"></span>
+			<span id="evaluate-response-true" alt="No mistake" aria-hidden="true" data-icon="&#e600;" class="icon-heart pulse"></span>
+		</div>
+	</div>
+
+	<!-- Fix Item View -->
+	<div id="card-fix" class="card">
+		<div class="card-content">
+			<p id="prompt"></p>
+			<form id="fix-response-text" autocomplete="off">
+				<input id="user-fix-response" type="text" spellcheck="false" autofocus autocapitalize="off" autocorrect="off" />
+			</form>
+			<p id="hint"></p>
+		</div>
+
+		<div id="controls-feedback" class="controls">
+			<span id="evaluate-fix-response" class="icon-arrow-right wobble-horizontal" aria-hidden="true" data-icon="&#e605;" alt="Next"></span>
+		</div>
+	</div>
+
+	<!-- Feedback View -->
+	<div id="card-feedback" class="card">
+		<div id="feedback-evaluation"></div>
+
+		<div class="card-content">
+			<p id="feedback-message"></p>
+			<img id="feedback-image" />
+		</div>
+
+		<div id="controls-feedback" class="controls">
+			<span id="display-next-item" class="icon-arrow-right wobble-horizontal" aria-hidden="true" data-icon="&#e605;" alt="Next"></span>
+		</div>
+	</div>
+
+	<!-- Results View -->
+	<div id="results">
+		<div id="evaluation-container">
+			<div id="result-evaluation"></div>
+			<div id="score"></div>
+			
+			<button id="reset-game">play again</button>
+		</div>
+
+		<div id="issues-container">
+			<div id="issue-list"></div>
+		</div>
+	</div>
+	
+	<footer> 
+		crafted by &#169; <a href="http://www.5deadly.com" target="_blank">5deadly</a>
+	</footer>
 </body>
-
 </html>
